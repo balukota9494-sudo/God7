@@ -1,0 +1,24 @@
+kind = "mobile"
+previewPath = "/"
+title = "SafeRoute AI"
+description = "A mobile-first safety navigation prototype for students and vulnerable travelers. Compare practical routes with transparent 0–100 safety scores, see why a route is recommended, and access SOS and SafeCircle tools during a demo journey."
+version = "1.0.0"
+id = "artifacts/saferoute-ai"
+router = "expo-domain"
+
+[[services]]
+name = "expo"
+ensurePreviewReachable = "/status"
+paths = [ "/" ]
+localPort = 20338
+
+[services.development]
+run = "pnpm --filter @workspace/saferoute-ai run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/saferoute-ai", "run", "build" ]
+run = [ "pnpm", "--filter", "@workspace/saferoute-ai", "run", "serve" ]
+
+[services.env]
+PORT = "20338"
+BASE_PATH = "/"

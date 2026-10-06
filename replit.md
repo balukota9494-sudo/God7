@@ -1,6 +1,6 @@
-# [Project name]
+# SafeRoute AI
 
-_Replace the heading above with the project's name, and this line with one sentence describing what this app does for users._
+A mobile-first safety-navigation prototype that compares illustrative routes with explainable demo scores, then provides a guided demo journey with SOS and SafeCircle access.
 
 ## Run & Operate
 
@@ -22,23 +22,29 @@ _Replace the heading above with the project's name, and this line with one sente
 
 ## Where things live
 
-_Populate as you build — short repo map plus pointers to the source-of-truth file for DB schema, API contracts, theme files, etc._
+- `artifacts/saferoute-ai/` — Expo app and local demo route-scoring flow
+- `artifacts/saferoute-ai/utils/safety.ts` — route-factor weights, score calculation, and preference ranking
+- `artifacts/saferoute-ai/components/` — route map, route cards, map picker, and SafeCircle
 
 ## Architecture decisions
 
-_Populate as you build — non-obvious choices a reader couldn't infer from the code (3-5 bullets)._
+- Route scoring is an explainable local weighted model with clearly identified illustrative factors; it does not use live incident or map data.
+- Current location is requested only when the user taps the location control; a manually entered origin remains available.
+- Trusted SafeCircle contacts are stored locally and trip sharing is initiated by the user through the device share sheet.
 
 ## Product
 
-_Describe the high-level user-facing capabilities of this app once they exist._
+- Compare three simulated routes using a 0–100 safety score and see factor-level explanations.
+- Choose walking, cycling, two-wheeler, or car, then prioritize fastest, safest, or balanced routing.
+- Preview a schematic route, advance through demo navigation steps, and open SOS or SafeCircle tools.
 
 ## User preferences
 
-_Populate as you build — explicit user instructions worth remembering across sessions._
+- Treat the attached product brief as the source for the initial SafeRoute AI scope.
 
 ## Gotchas
 
-_Populate as you build — sharp edges, "always run X before Y" rules._
+- Safety scores and route paths are prototype estimates, not live safety guidance. Keep that limitation visible in the UI.
 
 ## Pointers
 

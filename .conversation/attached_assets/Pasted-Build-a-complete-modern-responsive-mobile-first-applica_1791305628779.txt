@@ -1,0 +1,137 @@
+Build a complete, modern, responsive mobile-first application called **“SafeRoute AI”**.
+
+## 1. PRODUCT VISION
+
+SafeRoute AI is an AI-powered navigation and personal safety application that helps users choose the **safest practical route**, not simply the shortest or fastest route.
+
+Core tagline:
+
+**“Don’t just find the fastest route. Find the safest route.”**
+
+The application should compare multiple possible routes between a starting point and destination and calculate a dynamic **Safety Score from 0–100** for each route.
+
+The application should explain WHY a route is considered safer.
+
+This is a **student hackathon project**, so prioritize:
+- A polished user experience
+- A convincing working prototype
+- Demonstrable AI/ML functionality
+- Strong social impact
+- Clear visualizations
+- Realistic simulated/demo data where live data is unavailable
+
+Do NOT create an unfinished application with dozens of fake features. Make the core experience highly polished.
+
+---
+
+# 2. TARGET USERS
+
+Primary users:
+- Students
+- College students returning home at night
+- Women and vulnerable travelers
+- Pedestrians
+- Cyclists
+- People traveling through unfamiliar areas
+
+The interface must be simple enough for a first-time user.
+
+---
+
+# 3. MAIN USER FLOW
+
+The primary flow should be:
+
+1. Open SafeRoute AI
+2. Detect/select current location
+3. Enter destination
+4. Select travel mode
+5. Select safety preference
+6. Generate multiple routes
+7. Calculate Safety Score for each route
+8. Recommend the safest practical route
+9. Display route details
+10. Start navigation/demo journey
+11. Allow SOS and SafeCircle access during the journey
+
+The application should make the recommended route immediately obvious.
+
+---
+
+# 4. HOME SCREEN
+
+Create a beautiful modern dashboard.
+
+Top:
+
+**SafeRoute AI**
+
+Subtitle:
+
+**“Your destination matters. Your safety matters more.”**
+
+Main elements:
+
+### Current Location
+Show:
+“📍 Current Location”
+
+Allow:
+- GPS location
+- Search location
+- Map selection
+
+### Destination
+
+Large input:
+
+“Where do you want to go?”
+
+### Travel Mode
+
+Options:
+
+🚶 Walking  
+🚲 Cycling  
+🛵 Two Wheeler  
+🚗 Car
+
+### Safety Preference
+
+Options:
+
+⚡ Fastest  
+🛡️ Safest  
+⚖️ Balanced
+
+Default:
+**🛡️ Safest**
+
+Large CTA:
+
+**FIND SAFE ROUTE**
+
+---
+
+# 5. MAP SCREEN
+
+After entering the destination, display a map.
+
+Show at least three possible routes:
+
+### Route A
+Green
+
+**Recommended**
+Safety: 91/100
+Distance: 4.1 km
+ETA: 14 min
+
+### Route B
+Orange
+
+Safety: 68/100
+Distance: 3.5 km
+ETA: 11 min
+
+###
